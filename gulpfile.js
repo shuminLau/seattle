@@ -16,7 +16,7 @@ gulp.task('browser-sync',()=>{
     })
 })
 
-gulp.task('watch', function () {
+gulp.task('watch',()=> {
     gulp.watch('src/**', gulp.series('compile:twig'))
 })
 
