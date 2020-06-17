@@ -1,0 +1,4 @@
+// fullPage
+$(function () {
+    $('#page').fullpage();
+})
