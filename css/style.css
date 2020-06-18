@@ -170,3 +170,11 @@
     border-radius: 2vw;
     background-color: rgba(239, 238, 161, 0.6);
 }
+.section4-tax{
+     height: 100%;
+}
+.section4-text{
+    height: 100%;
+    text-align: center;
+    padding-left: 10vw;
+}
