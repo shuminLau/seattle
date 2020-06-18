@@ -6,14 +6,8 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    position: relative;
 }
 /*frame1*/
-.world-img{
-    opacity: .2;
-    position: absolute;
-    top: 0;
-}
 .preface {
     font-size: 18px;
     color: #888888;
@@ -44,8 +38,8 @@
 /*screen2 frame1*/
 .waterfall-box{
     display: flex;
-    width:50%;
-    transform: rotate(-20deg);
+    width: 55vw;
+    /*transform: rotate(-20deg);*/
 
 }
 .waterfall-wrap {
@@ -60,7 +54,7 @@
     box-shadow: 0 1px 5px rgba(0, 0, 0, .2);}
 .pic{
     border: 1px solid #e4e4e4;
-    margin-top:-200px ;
+    margin-top:-100px ;
 }
 .pic img{
     width: 100%;
@@ -80,7 +74,7 @@
     font-weight:bold;
     position: absolute;
     top: 45vh;
-    right: 20vw;
+    margin-left: 205px;
 }
 /*screen2 frame2*/
 .brand {
@@ -89,7 +83,6 @@
     position: relative;
     left: 46vw;
 }
-/*screen2 frame3*/
 .brand-amount {
     color: black;
     font-size: 18px;
@@ -101,9 +94,7 @@
     position: relative;
     padding: 0 37vw;
 }
-.brand-heart{
-
-}
+/*screen2 frame3*/
 .brand-like {
     color: #888888;
     font-size: 18px;
