@@ -1,11 +1,13 @@
 /*frame1*/
-.frame1-bg {
+.section1-bg{
     width: 90vw;
     height: 90vh;
     z-index: -1;
 }
 
-.frame1-bg img {
+.section1-bg img{
+    max-height: 100%;
+    max-width: 100%;
     width: auto;
     height: auto;
     max-width: 100%;
@@ -20,15 +22,22 @@
     left: 26vw;
 }
 
-.text-fashion {
-    font-size: 14px;
-    color: #888888;
-    position: relative;
-    left: 27vw;
+.section2 img{
+    width: 25vw;
+    height: auto;
+    margin-bottom: 6vw;
 }
 
+.section2-line{
+    width: .3vw;
+    height: 8vw;
+    margin: 0 4vw;
+    background: var(--color-gold);
+}
+
+
 /*screen2 frame1*/
-.waterfall-box {
+.waterfall-box{
     display: flex;
     width: 55vw;
     /*transform: rotate(-20deg);*/
@@ -66,7 +75,6 @@
     right: 20vw;
 
 }
-
 .produce-number {
     color: black;
     font-size: 34px;
@@ -83,20 +91,17 @@
     position: relative;
     left: 46vw;
 }
-
 .brand-amount {
     color: black;
     font-size: 18px;
     position: relative;
     padding: 0 43vw;
 }
-
 .brand-designer {
     font-size: 18px;
     position: relative;
     padding: 0 37vw;
 }
-
 /*screen2 frame3*/
 .brand-like {
     color: #888888;
@@ -105,28 +110,23 @@
     padding: 0 29vw;
 }
 
-.counter img {
+.counter img{
     width: 40vw;
     height: 18vh;
     padding: 5px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+    box-shadow:  0 1px 5px rgba(0, 0, 0, .2);
 }
-
 /*screen3 frame1*/
 .counter-img1 {
     margin-bottom: 6vw;
 }
-
-.counter-img2 {
+.counter-img2{
     margin-left: 6vw;
 }
-
-.counter-img3 {
+.counter-img3{
     margin-left: 9vw;
 }
-
-/*screen3 frame2*/
-.promise {
+.promise{
     position: absolute;
     top: 45%;
     left: 20%;
