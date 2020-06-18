@@ -1,69 +1,45 @@
+{%
+    set list = [
+    './img/screen2/waterfallsFlow/1.jpg',
+    './img/screen2/waterfallsFlow/2.jpg',
+    './img/screen2/waterfallsFlow/3.jpg',
+    './img/screen2/waterfallsFlow/4.jpg',
+    './img/screen2/waterfallsFlow/1.jpg',
+    './img/screen2/waterfallsFlow/2.jpg',
+    './img/screen2/waterfallsFlow/3.jpg',
+    './img/screen2/waterfallsFlow/4.jpg',
+    './img/screen2/waterfallsFlow/1.jpg',
+    './img/screen2/waterfallsFlow/2.jpg',
+    './img/screen2/waterfallsFlow/3.jpg',
+    './img/screen2/waterfallsFlow/4.jpg',
+    './img/screen2/waterfallsFlow/1.jpg',
+    './img/screen2/waterfallsFlow/2.jpg',
+    './img/screen2/waterfallsFlow/3.jpg',
+    './img/screen2/waterfallsFlow/4.jpg',
+]
+%}
+
 <div class="section">
-    <div class="waterfall-box">
-        <div class="waterfall-wrap">
-            <div class="waterfall">
-                <div class="pic" id="waterfall">
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                </div>
-            </div>
+    <div class="section3-waterfall">
+        <div class="waterfall-list" id="waterfall">
+            {% for i in list %}
+                <img src="{{ i }}" class="waterfall-item" alt="">
+            {% endfor %}
         </div>
-        <div class="waterfall-wrap">
-            <div class="waterfall">
-                <div class="pic" id="waterfall1">
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                </div>
-            </div>
+        <div class="waterfall-list" id="waterfall1">
+            {% for i in list %}
+                <img src="{{ i }}" class="waterfall-item" alt="">
+            {% endfor %}
         </div>
-        <div class="waterfall-wrap">
-            <div class="waterfall">
-                <div class="pic" id="waterfall2">
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                    <img src="img/2.jpg"/>
-                </div>
-            </div>
+        <div class="waterfall-list" id="waterfall2">
+            {% for i in list %}
+                <img src="{{ i }}" class="waterfall-item" alt="">
+            {% endfor %}
         </div>
     </div>
-    <text class="produce" id="font5">收录商品</text>
-    <text class="produce-number" id="font6">300万</text>
+
+    <div class="section3-text">
+        <p class="text-h3 text-black text-light" id="font5">收录商品</p>
+        <p class="text-h3 text-black text-font-bold" id="font6">300万</p>
+    </div>
 </div>
