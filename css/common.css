@@ -48,6 +48,10 @@
     font-size: 4vw;
 }
 
+.text-light{
+    font-weight: lighter;
+}
+
 /* 布局 */
 .position-center{
     position: absolute;

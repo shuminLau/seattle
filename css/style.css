@@ -44,46 +44,40 @@
 
 
 /*screen2 frame1*/
-.waterfall-box{
+.section3-waterfall{
     display: flex;
-    width: 55vw;
-    /*transform: rotate(-20deg);*/
-
+    width: 65vw;
+    transform: rotate(-15deg);
+    margin-top: -3vw;
+    margin-left: -3vw;
 }
-.waterfall-wrap {
+
+.section3-waterfall .waterfall-list {
     height: 120vh;
     overflow: hidden;
-    margin: 0 auto;
-    /*transform: rotate(-28deg);*/
+    padding: 0 .5vw;
 }
-.waterfall {
-    padding: 1px;
-    background-color: #fff;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, .2);}
-.pic{
-    border: 1px solid #e4e4e4;
-    margin-top:-100px ;
-}
-.pic img{
+
+.section3-waterfall .waterfall-item{
+    margin:.5vw 0;
     width: 100%;
     height: auto;
+    border: 1px solid #e4e4e4;
+    overflow: hidden;
+    border-radius: 1vw;
 }
-.produce {
-    color: #333333;
-    font-size: 24px;
-    position: absolute;
-    top: 40vh;
-    right: 20vw;
 
-}
-.produce-number {
-    color: black;
-    font-size: 34px;
-    font-weight:bold;
+.section3-text{
     position: absolute;
-    top: 45vh;
-    margin-left: 205px;
+    top: 50%;
+    right:8%;
+    transform: translateY(-50%);
 }
+
+.section3-text p{
+    margin-bottom: 2vw;
+}
+
 /*screen2 frame2*/
 .brand {
     color: #888888;
