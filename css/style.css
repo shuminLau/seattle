@@ -1,34 +1,41 @@
 /*frame1*/
-.section1-bg{
+.section1-bg {
     width: 90vw;
     height: 90vh;
     z-index: -1;
 }
 
-.section1-bg img{
+.section1-bg img {
     max-height: 100%;
     max-width: 100%;
     width: auto;
     height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.section1-text {
+    width: 100%;
+    text-align: center;
 }
 
 /*frame2*/
-.text-me {
-    font-size: 18px;
-    color: #888888;
-    position: relative;
-    left: 26vw;
+.section2 {
+    height: 100%;
+    flex-direction: column;
 }
 
-.section2 img{
+.section2 img {
     width: 25vw;
     height: auto;
     margin-bottom: 6vw;
 }
 
-.section2-line{
+.section2-line {
     width: .3vw;
     height: 8vw;
     margin: 0 4vw;
@@ -37,7 +44,7 @@
 
 
 /*screen2 frame1*/
-.waterfall-box{
+.waterfall-box {
     display: flex;
     width: 55vw;
     /*transform: rotate(-20deg);*/
@@ -75,6 +82,7 @@
     right: 20vw;
 
 }
+
 .produce-number {
     color: black;
     font-size: 34px;
@@ -91,17 +99,20 @@
     position: relative;
     left: 46vw;
 }
+
 .brand-amount {
     color: black;
     font-size: 18px;
     position: relative;
     padding: 0 43vw;
 }
+
 .brand-designer {
     font-size: 18px;
     position: relative;
     padding: 0 37vw;
 }
+
 /*screen2 frame3*/
 .brand-like {
     color: #888888;
@@ -110,48 +121,67 @@
     padding: 0 29vw;
 }
 
-.counter img{
+.counter img {
     width: 40vw;
     height: 18vh;
     padding: 5px;
-    box-shadow:  0 1px 5px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
 }
+
 /*screen3 frame1*/
 .counter-img1 {
     margin-bottom: 6vw;
 }
-.counter-img2{
+
+.counter-img2 {
     margin-left: 6vw;
 }
-.counter-img3{
+
+.counter-img3 {
     margin-left: 9vw;
 }
-.promise{
+
+.promise {
     position: absolute;
     top: 45%;
     left: 20%;
 }
 
 /*screen4 frame1*/
-.line {
-    display: inline;
-}
-
-.box {
-    display: block;
-    width: 80px;
+.section4-main {
+    height: 100%;
+    width: 400vw;
+    overflow: auto;
+    padding-left:38% ;
     text-align: center;
 }
 
-.point-img {
-    width: 80px;
-    height: 80px;
+.section4-box-item {
+    display: block;
+    width: 25vw;
+    text-align: center;
+}
+
+.section4-img {
+    padding-bottom: 3vw;
+    width: 21vw;
+    height: 20vw;
 }
 
 /*虚线*/
-.dash {
+.section4-dash {
     color: gray;
-    border-style: dotted;
-    width:20px;
-
+    border-style: dashed;
+    border-width: 0.5vw;
+    width: 100vw;
+}
+/*点*/
+.section4-dot{
+    position: absolute;
+    left: 62vw;
+    top: 49vh;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 2vw;
+    background-color: rgba(239, 238, 161, 0.6);
 }
