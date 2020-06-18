@@ -174,3 +174,42 @@
 .section4-text .text{
     padding: 1vh;
 }
+.section5{
+    height: 100%;
+}
+
+/*晒单卡片*/
+
+.review{
+    width: 30vw;
+    height: 40vw;
+    background: #ffffff;
+    border-radius: 1.5vw;
+    box-shadow: .5vw .5vw 1vw rgba(000,000,000,0.1 );
+   margin: 2vw;
+
+  }
+
+.review-item{
+    display: flex;
+
+
+}
+.post-img{
+   width:  30vw;
+    height: 25vw;
+    border-radius: 1.5vw 1.5vw 0 0;
+
+}
+.avatar{
+    width:3vw;
+    height: 3vw;
+    border-radius: 4vw;
+    margin: 0.5vw;
+
+}
+.review-text {
+   margin: 1vw;
+    overflow: hidden;
+    height: 10vw;
+}
