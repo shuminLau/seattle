@@ -1,0 +1,42 @@
+/* 公用css */
+:root{
+    --color-black: #333;
+    --color-grey: #888;
+    --color-gold: #c0966b;
+}
+
+.section{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'eng-bold';
+    src: url("https://zurich.cdn.xyh.io/font/Oswald-SemiBold.ttf")
+}
+
+.text-font-bold{
+    font-family: 'eng-bold';
+}
+
+.text-black{
+    color: var(--color-black);
+}
+
+.text-grey{
+    color: var(--color-grey);
+}
+
+.text-gold{
+    color: var(--color-gold);
+}
+
+.text-h3{
+    font-size: 4vw;
+}
+
+.text{
+    font-size: 3.5vw;
+}

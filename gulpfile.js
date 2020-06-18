@@ -17,7 +17,7 @@ gulp.task('browser-sync',()=>{
 })
 
 gulp.task('watch',()=> {
-    gulp.watch('src/**', gulp.series('compile:twig'))
+    gulp.watch(['src/**','css/**','js/**'], gulp.series('compile:twig'))
 })
 
 // twig 编译成 html
