@@ -186,9 +186,16 @@
     padding-bottom: 2vw;
 }
 
-/*晒单卡片*/
+/*screen5 frame1*/
 
-.review{
+
+/*screen5 frame2*/
+.section12-title{
+    padding-bottom: 3vw;
+}
+
+/*晒单卡片*/
+.section12 .review{
     width: 30vw;
     height: 40vw;
     background: #ffffff;
@@ -198,40 +205,40 @@
 
   }
 
-.review-item{
+.section12 .review-item{
     display: flex;
 
 
 }
-.post-img{
+.section12 .post-img{
    width:  30vw;
     height: 25vw;
     border-radius: 1.5vw 1.5vw 0 0;
 
 }
-.avatar{
+.section12 .avatar{
     width:3vw;
     height: 3vw;
     border-radius: 4vw;
     margin: 0.5vw;
 
 }
-.review-text {
+.section12 .review-text {
    margin: 1vw;
     overflow: hidden;
     height: 10vw;
 
 }
-/*开启挖货之旅*/
-.me-icon{
+
+/*screen6 frame1*/
+.section13-icon{
     width: 20vw;
 }
-.begin-text{
+.section13-text{
     padding: 5vw 0;
 }
-.button{
-    width: 25vw;
-    height: 8vw;
+.section13-button{
+    padding: 2vw 5vw;
     border-radius: 12vw;
     background:white;
     border: solid 0.3vw #d66852;
