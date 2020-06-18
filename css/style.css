@@ -79,37 +79,37 @@
 }
 
 /*screen2 frame2*/
-.brand {
-    color: #888888;
-    font-size: 14px;
-    position: relative;
-    left: 46vw;
-}
-.brand-amount {
-    color: black;
-    font-size: 18px;
-    position: relative;
-    padding: 0 43vw;
-}
-.brand-designer {
-    font-size: 18px;
-    position: relative;
-    padding: 0 37vw;
-}
-/*screen2 frame3*/
-.brand-like {
-    color: #888888;
-    font-size: 18px;
-    position: relative;
-    padding: 0 29vw;
+.section4{
+    height: 100%;
+    flex-direction: column;
 }
 
-.counter img{
-    width: 40vw;
-    height: 18vh;
-    padding: 5px;
-    box-shadow:  0 1px 5px rgba(0, 0, 0, .2);
+.section4-icon{
+    width: 15vw;
 }
+
+.section4 p{
+    padding-top: 1vw;
+}
+
+/*screen2 frame3*/
+.section5-main{
+    flex-direction: column;
+}
+
+.section5-main2{
+    width: 100%;
+}
+
+.section5-main .num{
+    padding-top: 2vw;
+}
+
+.section5-icon{
+    width: 7vw;
+    margin-right: 2vw;
+}
+
 /*screen3 frame1*/
 .counter-img1{
     margin-bottom: 6vw;
