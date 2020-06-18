@@ -1,4 +1,10 @@
 /* 公用css */
+:root{
+    --color-black: #333 !important;
+    --color-grey: #888 !important;
+    --color-gold: #c0966b !important;
+}
+
 .section{
     height: 100vh;
     width: 100vw;
@@ -19,15 +25,15 @@
 }
 
 .text-black{
-    color: #333 !important;
+    color: var(--color-black);
 }
 
 .text-grey{
-    color: #888 !important;
+    color: var(--color-grey);
 }
 
 .text-gold{
-    color: #c0966b !important;
+    color: var(--color-gold);
 }
 
 .text-lack {
@@ -35,11 +41,11 @@
 }
 
 .text-h3{
-    font-size: 4vw;
+    font-size: 6vw;
 }
 
 .text{
-    font-size: 3.5vw;
+    font-size: 4vw;
 }
 
 /* 布局 */
