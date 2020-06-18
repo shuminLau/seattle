@@ -170,5 +170,7 @@
 .section4-text{
     height: 100%;
     text-align: center;
-    padding-left: 10vw;
+}
+.section4-text .text{
+    padding: 1vh;
 }
