@@ -1,4 +1,4 @@
-// fullPage
+
 $(function () {
     $('#page').fullpage();
 })
@@ -51,3 +51,5 @@ $(function () {
 // new TweenMax("#waterfall",2,{y:-500,repeat:-1})
 // new TweenMax("#waterfall1",2,{y:100,repeat:-1})
 // new TweenMax("#waterfall2",2,{y:-500,repeat:-1})
+
+// new TweenMax("#line",4,{x:-2250,repeat:0})

@@ -125,3 +125,42 @@
     top: 45%;
     left: 20%;
 }
+
+/*screen4 frame1*/
+.section4-main {
+    height: 100%;
+    width: 400vw;
+    overflow: auto;
+    padding-left:38% ;
+    text-align: center;
+}
+
+.section4-box-item {
+    display: block;
+    width: 25vw;
+    text-align: center;
+}
+
+.section4-img {
+    padding-bottom: 3vw;
+    width: 21vw;
+    height: 20vw;
+}
+
+/*虚线*/
+.section4-dash {
+    color: gray;
+    border-style: dashed;
+    border-width: 0.5vw;
+    width: 100vw;
+}
+/*点*/
+.section4-dot{
+    position: absolute;
+    left: 62vw;
+    top: 49vh;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 2vw;
+    background-color: rgba(239, 238, 161, 0.6);
+}
