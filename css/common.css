@@ -40,6 +40,14 @@
     color: #95d7cf;
 }
 
+.text-blue{
+    color: #4a90e2;
+}
+
+.text-green{
+    color: #5da77a;
+}
+
 .text-h3{
     font-size: 6vw;
 }
@@ -71,6 +79,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
 }
 
 .full-width{
