@@ -1,16 +1,12 @@
 /* 公用css */
-:root{
-    --color-black: #333;
-    --color-grey: #888;
-    --color-gold: #c0966b;
-}
-
 .section{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     position: relative;
 }
+
+/* 文本 */
 
 @font-face {
     font-family: 'eng-bold';
@@ -22,15 +18,19 @@
 }
 
 .text-black{
-    color: var(--color-black);
+    color: #333 !important;
 }
 
 .text-grey{
-    color: var(--color-grey);
+    color: #888 !important;
 }
 
 .text-gold{
-    color: var(--color-gold);
+    color: #c0966b !important;
+}
+
+.text-lack {
+    color: #95d7cf;
 }
 
 .text-h3{
@@ -39,4 +39,18 @@
 
 .text{
     font-size: 3.5vw;
+}
+
+/* 布局 */
+.position-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
