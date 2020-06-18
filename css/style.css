@@ -1,13 +1,13 @@
-/* 公用 */
-.page{
-    padding: 0;
-}
-.section{
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
 /*frame1*/
+.world-img{
+    position: absolute;
+    width: 90vw;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .preface {
     font-size: 18px;
     color: #888888;
@@ -117,4 +117,9 @@
 }
 .counter-img3{
     margin-left: 9vw;
+}
+.promise{
+    position: absolute;
+    top: 45%;
+    left: 20%;
 }
