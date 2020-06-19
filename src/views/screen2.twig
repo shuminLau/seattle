@@ -1,0 +1,67 @@
+<div class="section">
+    {#  frame1  #}
+    {%
+        set list = [
+        './img/screen2/waterfallsFlow/1.jpg',
+        './img/screen2/waterfallsFlow/2.jpg',
+        './img/screen2/waterfallsFlow/3.jpg',
+        './img/screen2/waterfallsFlow/4.jpg',
+        './img/screen2/waterfallsFlow/1.jpg',
+        './img/screen2/waterfallsFlow/2.jpg',
+        './img/screen2/waterfallsFlow/3.jpg',
+        './img/screen2/waterfallsFlow/4.jpg',
+        './img/screen2/waterfallsFlow/1.jpg',
+        './img/screen2/waterfallsFlow/2.jpg',
+        './img/screen2/waterfallsFlow/3.jpg',
+        './img/screen2/waterfallsFlow/4.jpg',
+        './img/screen2/waterfallsFlow/1.jpg',
+        './img/screen2/waterfallsFlow/2.jpg',
+        './img/screen2/waterfallsFlow/3.jpg',
+        './img/screen2/waterfallsFlow/4.jpg',
+    ]
+    %}
+    <div class="position-center full-width full-height">
+        <div class="screen2-waterfall">
+            <div class="waterfall-list" id="waterfall">
+                {% for i in list %}
+                    <img src="{{ i }}" class="waterfall-item" alt="">
+                {% endfor %}
+            </div>
+            <div class="waterfall-list" id="waterfall1">
+                {% for i in list %}
+                    <img src="{{ i }}" class="waterfall-item" alt="">
+                {% endfor %}
+            </div>
+            <div class="waterfall-list" id="waterfall2">
+                {% for i in list %}
+                    <img src="{{ i }}" class="waterfall-item" alt="">
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="screen2-text">
+            <p class="text-h3 text-black text-light" id="font5">收录商品</p>
+            <p class="text-h3 text-black text-font-bold" id="font6">300万</p>
+        </div>
+    </div>
+
+    {#  frame2  #}
+    <div class="position-center flex-center full-height flex-column">
+        <img src="img/heart.svg" class="section4-icon "/>
+        <p id="brand" class="text-font-bold text-black text-h3 screen2-brand">Gucci</p>
+    </div>
+
+    {#  frame3  #}
+    <div>
+        <div class="position-center flex-center flex-column">
+            <p class="text-h3 text-light" id="font7">设计师品牌</p>
+            <p class="text-h3 screen2-num" id="font8">2万+</p>
+        </div>
+
+        <div  class="position-center flex-center full-width">
+            <img src="img/heart.svg" class="screen2-icon"/>
+            <p class="text-h3" id="font9">订阅你喜爱的品牌</p>
+        </div>
+    </div>
+
+</div>

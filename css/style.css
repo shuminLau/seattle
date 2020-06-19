@@ -1,11 +1,11 @@
-/*frame1*/
-.section1-bg{
+/*screen1 frame1*/
+.screen1-bg{
     width: 90vw;
     height: 90vh;
     z-index: -1;
 }
 
-.section1-bg img{
+.screen1-bg img{
     max-height: 100%;
     max-width: 100%;
     width: auto;
@@ -18,14 +18,14 @@
     margin: auto;
 }
 
-/*frame2*/
-.section2-icon{
+/*screen1 frame2*/
+.screen1-icon{
     width: 25vw;
     height: auto;
     margin-bottom: 6vw;
 }
 
-.section2-line{
+.screen1-line{
     width: .3vw;
     height: 8vw;
     margin: 0 4vw;
@@ -34,7 +34,7 @@
 
 
 /*screen2 frame1*/
-.section3-waterfall{
+.screen2-waterfall{
     display: flex;
     width: 65vw;
     transform: rotate(-15deg);
@@ -42,13 +42,13 @@
     margin-left: -3vw;
 }
 
-.section3-waterfall .waterfall-list {
+.screen2-waterfall .waterfall-list {
     height: 120vh;
     overflow: hidden;
     padding: 0 .5vw;
 }
 
-.section3-waterfall .waterfall-item{
+.screen2-waterfall .waterfall-item{
     margin:.5vw 0;
     width: 100%;
     height: auto;
@@ -57,38 +57,38 @@
     border-radius: 1vw;
 }
 
-.section3-text{
+.screen2-text{
     position: absolute;
     top: 50%;
     right:8%;
     transform: translateY(-50%);
 }
 
-.section3-text p{
+.screen2-text p{
     margin-bottom: 2vw;
 }
 
 /*screen2 frame2*/
-.section4-icon{
+.screen2-icon{
     width: 15vw;
 }
 
-.section4-text{
+.screen2-brand{
     padding-top: 1vw;
 }
 
 /*screen2 frame3*/
-.section5-num{
+.screen2-num{
     padding-top: 2vw;
 }
 
-.section5-icon{
+.screen2-icon{
     width: 7vw;
     margin-right: 2vw;
 }
 
 /*screen3 frame1*/
-.section6-bg{
+.screen3-table-bg{
     height: 100%;
     position: absolute;
     top:0;
@@ -96,21 +96,21 @@
     z-index: -1;
 }
 
-.section6-img{
+.screen3-img{
     position: absolute;
     width: 35vw;
     box-shadow: 1vw 1vw 1vw rgba(0,0,0,.2);
 }
 
-.section6-img1{
+.screen3-img1{
     top:5%;
     left: 5%;
 }
-.section6-img2{
+.screen3-img2{
     top:20%;
     left: 50%;
 }
-.section6-img3{
+.screen3-img3{
     top: 50%;
     left: 10%;
 }
@@ -119,26 +119,27 @@
 
 
 /*screen4 frame1*/
-.section8-main {
+.screen4-main {
+    position: absolute;
     width: 300vw;
     text-align: center;
     margin-left: calc(50vw - 10.5vw);
     /*transform: translateX(-300vw);*/
 }
 
-.section8-box-item {
+.screen4-box-item {
     width: 25vw;
     text-align: center;
 }
 
-.section8-img {
+.screen4-img {
     padding-bottom: 3vw;
     width: 21vw;
     height: 20vw;
 }
 
 /*虚线*/
-.section8-dash {
+.screen4-dash {
     width: 100%;
     height: 2vw;
     background-image: linear-gradient(to right, #ddd 0%, #ddd 50%, transparent 50%);
@@ -147,7 +148,7 @@
     position: relative;
 }
 /*点*/
-.section8-dot{
+.screen4-dot{
     position: absolute;
     top: -1.7vw;
     width: 4.4vw;
@@ -156,7 +157,7 @@
     background-color: rgba(239, 238, 161, 0.6);
 }
 
-.section8-dot::after{
+.screen4-dot::after{
     content: '';
     position: absolute;
     left: 1vw;
@@ -167,22 +168,22 @@
     background-color: rgba(234, 212, 39, 0.9);
 }
 
-.section8-dash-left{
+.screen4-dash-left{
     left: 8vw;
 }
 
-.section8-dash-right{
+.screen4-dash-right{
     right: 8vw;
 }
 
 /*screen4 frame2*/
 
 /*screen4 frame3*/
-.section10-item{
+.screen4-item{
     padding: 2vw;
 }
 
-.section10-item .item-title{
+.screen4-item .item-title{
     padding-bottom: 2vw;
 }
 
@@ -190,12 +191,12 @@
 
 
 /*screen5 frame2*/
-.section12-title{
+.screen5-title{
     padding-bottom: 3vw;
 }
 
 /*晒单卡片*/
-.section12 .review{
+.screen5 .review{
     width: 30vw;
     height: 40vw;
     background: #ffffff;
@@ -205,25 +206,25 @@
 
   }
 
-.section12 .review-item{
+.screen5 .review-item{
     display: flex;
 
 
 }
-.section12 .post-img{
+.screen5 .post-img{
    width:  30vw;
     height: 25vw;
     border-radius: 1.5vw 1.5vw 0 0;
 
 }
-.section12 .avatar{
+.screen5 .avatar{
     width:3vw;
     height: 3vw;
     border-radius: 4vw;
     margin: 0.5vw;
 
 }
-.section12 .review-text {
+.screen5 .review-text {
    margin: 1vw;
     overflow: hidden;
     height: 10vw;
@@ -231,13 +232,13 @@
 }
 
 /*screen6 frame1*/
-.section13-icon{
+.screen6-icon{
     width: 20vw;
 }
-.section13-text{
+.screen6-text{
     padding: 5vw 0;
 }
-.section13-button{
+.screen6-button{
     padding: 2vw 5vw;
     border-radius: 12vw;
     background:white;
