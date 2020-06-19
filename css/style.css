@@ -1,11 +1,11 @@
 /*screen1 frame1*/
-.screen1-bg{
+.screen1-bg {
     width: 90vw;
     height: 90vh;
     z-index: -1;
 }
 
-.screen1-bg img{
+.screen1-bg img {
     max-height: 100%;
     max-width: 100%;
     width: auto;
@@ -19,13 +19,13 @@
 }
 
 /*screen1 frame2*/
-.screen1-icon{
+.screen1-icon {
     width: 25vw;
     height: auto;
     margin-bottom: 6vw;
 }
 
-.screen1-line{
+.screen1-line {
     width: .3vw;
     height: 8vw;
     margin: 0 4vw;
@@ -34,22 +34,30 @@
 
 
 /*screen2 frame1*/
-.screen2-waterfall{
+.screen2-waterfall {
+
     display: flex;
-    width: 65vw;
-    transform: rotate(-15deg);
-    margin-top: -3vw;
-    margin-left: -3vw;
+    width: 100vw;
+    opacity: 0;
+    padding:0 5vw ;
 }
 
 .screen2-waterfall .waterfall-list {
     height: 120vh;
-    overflow: hidden;
+    /*overflow: auto;*/
     padding: 0 .5vw;
+    transform: matrix(1, 0, 0, 1, 0, -500);
 }
 
-.screen2-waterfall .waterfall-item{
-    margin:.5vw 0;
+.screen2-waterfall .waterfall-list1 {
+    height: 120vh;
+    /*overflow: auto;*/
+    padding: 0 .5vw;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.screen2-waterfall .waterfall-item {
+    margin: .5vw 0;
     width: 100%;
     height: auto;
     border: 1px solid #e4e4e4;
@@ -57,60 +65,66 @@
     border-radius: 1vw;
 }
 
-.screen2-text{
+.screen2-text {
     position: absolute;
     top: 50%;
-    right:8%;
+    right: 40%;
+
     transform: translateY(-50%);
 }
 
-.screen2-text p{
+.screen2-text p {
     margin-bottom: 2vw;
+    text-align: center;
 }
 
 /*screen2 frame2*/
-.screen2-icon{
+.screen2-icon {
     width: 15vw;
+    opacity: 0;
 }
 
-.screen2-brand{
+.screen2-brand {
     padding-top: 1vw;
+    opacity: 0;
 }
 
 /*screen2 frame3*/
-.screen2-num{
+.screen2-num {
     padding-top: 2vw;
 }
 
-.screen2-icon{
+.screen2-icon {
     width: 7vw;
     margin-right: 2vw;
 }
 
 /*screen3 frame1*/
-.screen3-table-bg{
+.screen3-table-bg {
     height: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     z-index: -1;
 }
 
-.screen3-img{
+.screen3-img {
     position: absolute;
     width: 35vw;
-    box-shadow: 1vw 1vw 1vw rgba(0,0,0,.2);
+    box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, .2);
 }
 
-.screen3-img1{
-    top:5%;
+.screen3-img1 {
+    top: 5%;
     left: 5%;
 }
-.screen3-img2{
-    top:20%;
+
+.screen3-img2 {
+    top: 20%;
     left: 50%;
 }
-.screen3-img3{
+
+.screen3-img3 {
     top: 50%;
     left: 10%;
 }
@@ -147,8 +161,9 @@
     background-repeat: repeat-x;
     position: relative;
 }
+
 /*点*/
-.screen4-dot{
+.screen4-dot {
     position: absolute;
     top: -1.7vw;
     width: 4.4vw;
@@ -157,7 +172,7 @@
     background-color: rgba(239, 238, 161, 0.6);
 }
 
-.screen4-dot::after{
+.screen4-dot::after {
     content: '';
     position: absolute;
     left: 1vw;
@@ -168,22 +183,22 @@
     background-color: rgba(234, 212, 39, 0.9);
 }
 
-.screen4-dash-left{
+.screen4-dash-left {
     left: 8vw;
 }
 
-.screen4-dash-right{
+.screen4-dash-right {
     right: 8vw;
 }
 
 /*screen4 frame2*/
 
 /*screen4 frame3*/
-.screen4-item{
+.screen4-item {
     padding: 2vw;
 }
 
-.screen4-item .item-title{
+.screen4-item .item-title {
     padding-bottom: 2vw;
 }
 
@@ -191,57 +206,62 @@
 
 
 /*screen5 frame2*/
-.screen5-title{
+.screen5-title {
     padding-bottom: 3vw;
 }
 
 /*晒单卡片*/
-.screen5 .review{
+.screen5 .review {
     width: 30vw;
     height: 40vw;
     background: #ffffff;
     border-radius: 1.5vw;
-    box-shadow: .5vw .5vw 1vw rgba(000,000,000,0.1 );
-   margin: 2vw;
+    box-shadow: .5vw .5vw 1vw rgba(000, 000, 000, 0.1);
+    margin: 2vw;
 
-  }
+}
 
-.screen5 .review-item{
+.screen5 .review-item {
     display: flex;
 
 
 }
-.screen5 .post-img{
-   width:  30vw;
+
+.screen5 .post-img {
+    width: 30vw;
     height: 25vw;
     border-radius: 1.5vw 1.5vw 0 0;
 
 }
-.screen5 .avatar{
-    width:3vw;
+
+.screen5 .avatar {
+    width: 3vw;
     height: 3vw;
     border-radius: 4vw;
     margin: 0.5vw;
 
 }
+
 .screen5 .review-text {
-   margin: 1vw;
+    margin: 1vw;
     overflow: hidden;
     height: 10vw;
 
 }
 
 /*screen6 frame1*/
-.screen6-icon{
+.screen6-icon {
     width: 20vw;
 }
-.screen6-text{
+
+.screen6-text {
     padding: 5vw 0;
 }
-.screen6-button{
+
+.screen6-button {
     padding: 2vw 5vw;
     border-radius: 12vw;
-    background:white;
+    background: white;
     border: solid 0.3vw #d66852;
     color: #d66852;
 }
