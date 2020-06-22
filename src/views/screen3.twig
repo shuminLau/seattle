@@ -1,29 +1,48 @@
 <div class="section">
     {#  frame1  #}
-    <div class="position-center full-height full-width">
-        <img src="./img/screen3/swiper/1.jpg" class="screen3-img screen3-img1"/>
-        <img src="./img/screen3/swiper/1.jpg" class="screen3-img screen3-img2"/>
-        <img src="./img/screen3/swiper/1.jpg" class="screen3-img screen3-img3"/>
-        <img src="./img/screen3/table-bg.svg" class="screen3-table-bg">
+    {% set list1 =[
+        'img/screen3/swiper/1.jpg',
+        'img/screen3/swiper/2.jpg',
+
+    ] %}
+    {% set list2 =[
+        'img/screen3/swiper/5.jpg',
+        'img/screen3/swiper/6.jpg',
+    ] %}
+    <img src="img/screen3/table-bg.svg" class="screen3-table-bg" id="background"/>
+    <div class="position-center full-height full-width" id="list-img">
+
+        {% for i in list1 %}
+            <img src="{{ i }}" class="screen3-img">
+        {% endfor %}
+        {% for i in list2 %}
+            <img src="{{ i }}" class="screen3-img screen3-img1" >
+        {% endfor %}
+        {% for i in list1 %}
+            <img src="{{ i }}" class="screen3-img">
+        {% endfor %}
+        {% for i in list2 %}
+            <img src="{{ i }}" class="screen3-img screen3-img1" >
+        {% endfor %}
     </div>
 
-    {#  frame2  #}
-    <div>
-        <div class="position-center full-width">
-            <p class="text text-grey text-center">
-                甄选海外40多家
-                <span class="text-gold">实体店</span>/
-                <span class="text-gold">电商网站</span>
-            </p>
-        </div>
 
-        <div  class="position-center text text-grey full-width text-center">
-            <p class="text-light">源头上杜绝假货</p>
-            <p>模式决定：<span class="text-gold">我们只卖正品</span></p>
-        </div>
+        <div>
+            <div class="position-center full-width ">
+                <p class="transparent text text-grey text-center" id="font10">
+                    甄选海外40多家
+                    <span class="text-gold">实体店</span>/
+                    <span class="text-gold">电商网站</span>
+                </p>
+            </div>
 
-        <div class="screen1-bg position-center"  id="bg1">
-            <img src="./img/screen1/world.svg"/>
+            <div  class="position-center text text-grey full-width text-center">
+                <p class="transparent text-light" id="font11">源头上杜绝假货</p>
+                <p  class="transparent" id="font12">模式决定：<span class="text-gold">我们只卖正品</span></p>
+            </div>
+
+            <div class="screen1-bg position-center"  id="background1">
+                <img src="./img/screen1/world.svg"/>
+            </div>
         </div>
-    </div>
 </div>
