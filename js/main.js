@@ -1,3 +1,19 @@
+lottie.loadAnimation({
+    name:'logo',
+    path:'../img/screen1/me-icon.json',
+    autoplay:false,
+    loop:false,
+    renderer:'svg',
+    container:document.getElementById('logo')
+});
+
+lottie.loadAnimation({
+    path:'../img/screen1/world-bg.json',
+    autoplay:true,
+    loop:true,
+    renderer:'svg',
+    container:document.getElementById('world-bg')
+});
 
 timeline1();
 
@@ -32,18 +48,37 @@ $(function () {
 
 //时间轴
 function timeline1() {
-    const timeLine = new TimelineMax();
-    timeLine.add(TweenLite.fromTo('#bg1', 2, {opacity: 0,}, {opacity: 1}))
-    timeLine.add(TweenLite.fromTo('#font1', 2, {opacity: 0,}, {opacity: 1}))
-    timeLine.add(TweenLite.fromTo('#font1', 1, {}, {opacity: 0, delay: 1.5}))
-    timeLine.add(TweenLite.fromTo('#font2', 1.5, {opacity: 0}, {opacity: 1}))
-    timeLine.add(TweenLite.fromTo(['#font2', '#bg1'], 1, {}, {opacity: 0, delay: 1.5}),)
-    //
-    timeLine.add(TweenLite.fromTo("#logo", 0.5, {y: 100, opacity: 0}, {y: 0, opacity: 1}))
-    timeLine.add(TweenLite.fromTo("#line", 1, {y: -100, opacity: 0}, {y: 0, opacity: 1}))
-    timeLine.add(TweenLite.fromTo('#font3', 1, {opacity: 0}, {opacity: 1}))
-    timeLine.add(TweenLite.fromTo('#font4', 1, {opacity: 0}, {opacity: 1}))
-    timeLine.play()
+    setTimeout(()=>{
+        lottie.play('logo');
+    },13000)
+
+    const timeLine1 = new TimelineMax();
+    const timeLine2 = new TimelineMax();
+    const timeLine3 = new TimelineMax();
+
+    // 时间轴1
+    timeLine1.add(TweenLite.fromTo('#bg1', 2, {opacity: 0}, {opacity: 1}));      // 时间轴1 起始0s 结束2s
+    timeLine1.add(TweenLite.fromTo('#font1', 3, {opacity: 0}, {opacity: 1}))     // 时间轴1 起始2s 结束5s
+    timeLine1.add(TweenLite.fromTo('#font1', 1, {}, {opacity: 0, delay: 1.5}))    // 时间轴1 起始6.5s 结束7.5s
+    timeLine1.add(TweenLite.fromTo('#font2', 1.5, {opacity: 0}, {opacity: 1}))    // 时间轴1 起始7s 结束9s
+    timeLine1.add(TweenLite.fromTo(['#font2', '#bg1'], 1, {}, {opacity: 0, delay: 1.5}),)   // 时间轴1 起始10.5 结束11.5s
+
+    timeLine1.add(TweenLite.fromTo("#logo", 2.5, {opacity: 0}, {opacity: 1}))  // 时间轴1 起始11.5s 结束14s
+    timeLine1.add(TweenLite.fromTo("#line", 1, {y: -50}, {y: 0}))   // 时间轴1 起始14s 结束15s
+    timeLine1.add(TweenLite.fromTo('#font3', 1, {x:50}, {x:0}))   // 时间轴1 起始15s 结束16s
+
+
+    // 时间轴2
+    timeLine2.add(TweenLite.fromTo('#bg1', 12, {scale:1}, {scale:1.2}))  // 时间轴2 起始0s 结束12s
+    timeLine2.add(TweenLite.fromTo("#line", 0.8, {opacity: 0}, {opacity: 1, delay: 2.2}))   // 时间轴2 起始14.5s 结束15s
+    timeLine2.add(TweenLite.fromTo(['#font3','#font4'], 0.5, {opacity: 0}, {opacity: 1, delay: 0.5}))    // 时间轴2 起始15.5s 结束16s
+
+    // 时间轴3
+    timeLine3.add(TweenLite.fromTo('#font4', 1, {x:-50}, {x:0, delay: 15}))   // 时间轴3 起始15s 结束16s
+
+    timeLine1.play();
+    timeLine2.play();
+    timeLine3.play();
 }
 
 //

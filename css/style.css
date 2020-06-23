@@ -3,9 +3,11 @@
     width: 90vw;
     height: 90vh;
     z-index: -1;
+    overflow: hidden;
 }
 
-.screen1-bg img{
+.screen1-bg video{
+    object-fit: cover;
     max-height: 100%;
     max-width: 100%;
     width: auto;
@@ -16,6 +18,12 @@
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.screen-logo{
+    width: 30vw;
+    height: 20vw;
+    margin-bottom: 5vw;
 }
 
 /*screen1 frame2*/
