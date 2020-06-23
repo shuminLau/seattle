@@ -1,20 +1,20 @@
-
 lottie.loadAnimation({
-    name:'logo',
-    path:'../img/screen1/me-icon.json',
-    autoplay:false,
-    loop:false,
-    renderer:'svg',
-    container:document.getElementById('logo')
+    name: 'logo',
+    path: '../media/screen1/me-icon.json',
+    autoplay: false,
+    loop: false,
+    renderer: 'svg',
+    container: document.getElementById('logo')
 });
 
 lottie.loadAnimation({
-    path:'../img/screen1/world-bg.json',
-    autoplay:true,
-    loop:true,
-    renderer:'svg',
-    container:document.getElementById('world-bg')
+    path: '../media/screen1/world-bg.json',
+    autoplay: true,
+    loop: true,
+    renderer: 'svg',
+    container: document.getElementById('world-bg')
 });
+
 
 timeline1();
 
@@ -47,84 +47,108 @@ $(function () {
     });
 })
 
+
 //时间轴screen1
 function timeline1() {
-    setTimeout(()=>{
+    setTimeout(() => {
+        lottie.setSpeed(1.6, 'logo');
         lottie.play('logo');
-    },13000)
+    }, 6500)
+    setTimeout(() => {
+        $.fn.fullpage.moveSectionDown();
+    }, 13000);
 
     const timeLine1 = new TimelineMax();
     const timeLine2 = new TimelineMax();
-    const timeLine3 = new TimelineMax();
 
     // 时间轴1
-    timeLine1.add(TweenLite.fromTo('#bg1', 2, {opacity: 0}, {opacity: 1}));      // 时间轴1 起始0s 结束2s
-    timeLine1.add(TweenLite.fromTo('#font1', 3, {opacity: 0}, {opacity: 1}))     // 时间轴1 起始2s 结束5s
-    timeLine1.add(TweenLite.fromTo('#font1', 1, {}, {opacity: 0, delay: 1.5}))    // 时间轴1 起始6.5s 结束7.5s
-    timeLine1.add(TweenLite.fromTo('#font2', 1.5, {opacity: 0}, {opacity: 1}))    // 时间轴1 起始7s 结束9s
-    timeLine1.add(TweenLite.fromTo(['#font2', '#bg1'], 1, {}, {opacity: 0, delay: 1.5}),)   // 时间轴1 起始10.5 结束11.5s
+    timeLine1.add(TweenLite.fromTo('#bg1', 2.5, {opacity: 0}, {opacity: 1}));      // 时间轴1 起始0s 结束2.5s
+    timeLine1.add(TweenLite.fromTo('#font1', 1.3, {opacity: 0}, {opacity: 1}))     // 时间轴1 起始2.5s 结束3s
+    timeLine1.add(TweenLite.fromTo('#font1', 0.7, {}, {opacity: 0}))    // 时间轴1 起始3s 结束3.5s
+    timeLine1.add(TweenLite.fromTo('#font2', 0.7, {opacity: 0}, {opacity: 1}))    // 时间轴1 起始3.5s 结束4.5s
+    timeLine1.add(TweenLite.fromTo(['#font2', '#bg1'], 0.5, {}, {opacity: 0, delay: 0.3}),)   // 时间轴1  结束6s
 
-    timeLine1.add(TweenLite.fromTo("#logo", 2.5, {opacity: 0}, {opacity: 1}))  // 时间轴1 起始11.5s 结束14s
-    timeLine1.add(TweenLite.fromTo("#line", 1, {y: -50}, {y: 0}))   // 时间轴1 起始14s 结束15s
-    timeLine1.add(TweenLite.fromTo('#font3', 1, {x:50}, {x:0}))   // 时间轴1 起始15s 结束16s
+    timeLine1.add(TweenLite.fromTo("#logo", 2, {opacity: 0}, {opacity: 1}))  // 时间轴1 起始6s 结束8s
+    timeLine1.add(TweenLite.fromTo("#line", 0.1, {y: -50, x: '0'}, {y: 0, x: '1vw'}))   // 时间轴1 起始8s 结束8.1s
+    //  timeLine1.add(TweenLite.fromTo('#font3', 1, {x:50}, {x:0,}))   // 时间轴1 起始8.1s 结束9.1s
 
 
     // 时间轴2
-    timeLine2.add(TweenLite.fromTo('#bg1', 13, {scale:1}, {scale:1.2}))  // 时间轴2 起始0s 结束13s
-    timeLine2.add(TweenLite.fromTo("#line", 0.8, {opacity: 0}, {opacity: 1, delay: 1.2}))   // 时间轴2 起始14.5s 结束15s
-    timeLine2.add(TweenLite.fromTo(['#font3','#font4'], 0.5, {opacity: 0}, {opacity: 1, delay: 0.5}))    // 时间轴2 起始15.5s 结束16s
+    timeLine2.add(TweenLite.fromTo('#bg1', 6, {scale: 1}, {scale: 1.2}))  // 时间轴2 起始0s 结束6s
+    timeLine2.add(TweenLite.fromTo("#line", 1, {opacity: 0}, {opacity: 1, delay: 2}))   // 时间轴2 起始8s 结束9s
+    timeLine2.add(TweenLite.fromTo('#font3', 1, {opacity: 0}, {opacity: 1, delay: 0.5}))// 时间轴2 起始9.3s 结束10.5s
+    timeLine2.add(TweenLite.fromTo('#font4', 0.5, {opacity: 0}, {x: 10, opacity: 1, delay: 0.5})) // 时间轴2 起始10.8s 结束11.6s
 
-    // 时间轴3
-    timeLine3.add(TweenLite.fromTo('#font4', 1, {x:-50}, {x:0, delay: 15}))   // 时间轴3 起始15s 结束16s
 
     timeLine1.play();
     timeLine2.play();
-    timeLine3.play();
+
+
 }
 
 //时间轴screen2
 function timeline2() {
     //frame1
-    const timeLine3 = new TimelineMax() //瀑布流渐显
-    timeLine3.add(TweenLite.fromTo(["#waterfall-box"], 1, {opacity: 0}, {opacity: 1}))
-
     const timeLine = new TimelineMax({delay: 1,})//瀑布流同步
-    timeLine.add(TweenLite.fromTo('#waterfall1', 8, {y: 0}, {y: -500}))
-
     const timeLine1 = new TimelineMax({delay: 1})//瀑布流同步
-    timeLine1.add(TweenLite.fromTo(['#waterfall', '#waterfall2'], 8, {y: -500}, {y: 0}))
-    timeLine1.add(TweenLite.fromTo(['#waterfall-box'], 1, {opacity: 1}, {opacity: 0.6}))
+    const timeLine2 = new TimelineMax({delay: 3.5,})//商品收录
+    const timeLine3 = new TimelineMax() //瀑布流渐显
 
-    const timeLine2 = new TimelineMax({delay: 9.5,})//商品收录
-    timeLine2.add(TweenLite.fromTo('#font5', 2, {}, {opacity: 1}))
-    timeLine2.add(TweenLite.fromTo('#font6', 2, {}, {opacity: 1,}))
-    timeLine2.add(TweenLite.fromTo(['#waterfall-box', '#font5', '#font6',], 2.5, {}, {opacity: 0, delay: 1}))
+    const brand = new TimelineMax({repeat: 1, delay: 7.5});
+    brand.to("#brand", 0.15, {text: {value: "sadfd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "sadsaa", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asdas", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "sadsaa", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asdas", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "sadsaa", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asdas", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "sadsaa", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
+        .to("#brand", 0.15, {text: {value: "asdas", delimiter: " "}, ease: Linear.easeNone});
+
+
+    const heart = new TimelineMax({repeat: 30, delay: 7.5});
+    heart.fromTo("#heart", 0.15, {scale: 1}, {opacity: 1, scale: 1.1})
+
+
+    timeLine3.add(TweenLite.fromTo(["#waterfall-box"], 0.5, {opacity: 0}, {opacity: 1}))//时间轴3  起始0s 结束1s
+
+    timeLine.add(TweenLite.fromTo('#waterfall1', 3, {y: 0}, {y: -500}))//时间轴 起始0.5s 结束3.5s
+    timeLine1.add(TweenLite.fromTo(['#waterfall', '#waterfall2'], 3, {y: -500}, {y: 0}))//时间轴1 起始0.5s 结束3.5s
+    timeLine1.add(TweenLite.fromTo(['#waterfall-box'], 0.5, {opacity: 1}, {opacity: 0.7}))//时间轴1 起始3.5s 结束4s
+
+
+    timeLine2.add(TweenLite.fromTo('#font5', 1, {}, {opacity: 1,delay:0.5}))//时间轴2 起始3.5s 结束5s
+    timeLine2.add(TweenLite.fromTo('#font6', 1, {}, {opacity: 1, delay: 0.5}))//时间轴2 起始5.5s 结束6.5s
+    timeLine2.add(TweenLite.fromTo(['#waterfall-box', '#font5', '#font6',], 0.5, {}, {opacity: 0}))//时间轴2 起始6.5s 结束7s
     //frame2 品牌和心跳动
-    timeLine2.add(TweenLite.to(['#heart', '#brand'], 1, {opacity: 1}))
-    timeLine2.add(TweenLite.fromTo(["#heart", "#brand"], 2.5, {}, {opacity: 0, delay: 5}))
+    timeLine2.add(TweenLite.to(['#heart', '#brand'], 3, {opacity: 1}))//时间轴2 起始7.5s 结束10.5s
+    timeLine2.add(TweenLite.fromTo(["#heart", "#brand"], 1, {}, {opacity: 0, delay: 2}))//时间轴2 起始12.5s 结束13.5s
     //frame3 品牌订阅
-    timeLine2.add(TweenLite.fromTo(['#font7', '#font8'], 2, {opacity: 0}, {opacity: 1}))
-    timeLine2.add(TweenLite.fromTo(['#font-num'], 2, {opacity: 1}, {opacity: 0}))
-    timeLine2.add(TweenLite.fromTo(['#font9', '#screen2-icon1'], 2, {opacity: 0}, {opacity: 1}))
+    timeLine2.add(TweenLite.fromTo(['#font7', '#font8'], 1, {opacity: 0}, {opacity: 1,delay:1}))//时间轴2 起始14.5s 结束15.5s
+    timeLine2.add(TweenLite.fromTo(['#font-num'], 1, {opacity: 1}, {opacity: 0,delay:0.5}))//时间轴2 起始16s 结束17s
+    timeLine2.add(TweenLite.fromTo(['#font9', '#screen2-icon1'], 1, {opacity: 0}, {opacity: 1,}))//时间轴2 起始17.5s 结束18.5s
 
+    setTimeout(() => {
+        $.fn.fullpage.moveSectionDown();
+    }, 18500);
 
-    const brand = new TimelineMax({repeat: 1, delay: 17});
-    brand.to("#brand", 0.5, {text: {value: "sadfd", delimiter: " "}, ease: Linear.easeNone})
-        .to("#brand", 0.5, {text: {value: "sadsaa", delimiter: " "}, ease: Linear.easeNone})
-        .to("#brand", 0.5, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
-        .to("#brand", 0.5, {text: {value: "asasdd", delimiter: " "}, ease: Linear.easeNone})
-        .to("#brand", 0.5, {text: {value: "asdas", delimiter: " "}, ease: Linear.easeNone});
-
-    const heart = new TimelineMax({repeat: 10, delay: 17});
-    heart.fromTo("#heart", 0.5, {scale: 1}, {opacity: 1, scale: 1.1})
 
 }
 
 //时间轴screen3
 function timeline3() {
     const timeLine = new TimelineMax()//照片墙
-    timeLine.add(TweenLite.to(['#list-img'], 1, {rotation: -5, y: 0, delay: 1}, 0.5))
-    timeLine.add(TweenLite.to(['#list-img'], 2, {y: -1000,}, 0.5))
+    timeLine.add(TweenLite.to(['#list-media'], 1, {y: '-200vh', y: 0, delay: 0.5}, 0.5))
     // frame2
     timeLine.add(TweenLite.to('#background', 1, {opacity: 0}))
     timeLine.add(TweenLite.fromTo('#background1', 1, {opacity: 0}, {opacity: 1}))

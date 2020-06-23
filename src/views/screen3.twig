@@ -1,16 +1,16 @@
 <div class="section">
     {#  frame1  #}
     {% set list1 =[
-        'img/screen3/swiper/1.jpg',
-        'img/screen3/swiper/2.jpg',
+        'media/screen3/swiper/1.jpg',
+        'media/screen3/swiper/2.jpg',
 
     ] %}
     {% set list2 =[
-        'img/screen3/swiper/5.jpg',
-        'img/screen3/swiper/6.jpg',
+        'media/screen3/swiper/5.jpg',
+        'media/screen3/swiper/6.jpg',
     ] %}
-    <img src="img/screen3/table-bg.svg" class="screen3-table-bg" id="background"/>
-    <div class="position-center full-height full-width" id="list-img">
+    <img src="../../media/screen3/table-bg.svg" class="screen3-table-bg" id="background"/>
+    <div class="position-center full-height full-width screen3-box" id="list-img">
 
         {% for i in list1 %}
             <img src="{{ i }}" class="screen3-img">
@@ -42,7 +42,7 @@
             </div>
 
             <div class="screen1-bg position-center"  id="background1">
-                <img src="./img/screen1/world.svg"/>
+                <img src="../../media/screen1/world.svg"/>
             </div>
         </div>
 </div>

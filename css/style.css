@@ -34,9 +34,9 @@
 }
 
 .screen1-line {
-    width: .3vw;
+    width: .4vw;
     height: 8vw;
-    margin: 0 6vw 0 6vw;
+    margin: 0 4vw 0 6vw;
     background: var(--color-gold);
 }
 
@@ -120,9 +120,11 @@
     left: 0;
     z-index: -1;
 }
-
-.screen3-img {
+.screen3-box{
     position: relative;
+    top: 150vh;
+}
+.screen3-img {
     width: 35vw;
     box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, .2);
     margin:7vw 5vw 5vw 6vw;
