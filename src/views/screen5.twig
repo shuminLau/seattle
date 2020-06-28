@@ -1,57 +1,43 @@
 <div class="section">
     {#  frame1  #}
-{#    <div class="position-center full-width text-center text text-grey">#}
-{#        我们始于#}
-{#        <span class="text-font-bold text-h3 text-gold">2012</span>#}
-{#        年#}
-{#    </div>#}
-{#    <div class="position-center full-width text-center text text-grey">#}
-{#        <span class="text-h3 text-font-bold text-gold">2014</span>#}
-{#        累计销售#}
-{#        <span class="text-font-bold text-h3 text-black ">400000</span>#}
-{#        件#}
-{#    </div>#}
+    <div class="transparent position-center full-width text-center text text-grey" id="begin">
+        我们始于
+        <span class="text-font-bold text-h3 text-gold">2012</span>
+        年
+    </div>
+    <div class="transparent position-center full-width text-center text text-grey " id="all">
+       <span class="text-h3 text-font-bold text-gold">20<span id="year">14</span></span>
+          累计销售
+        <span class="text-font-bold text-h3 text-black" id="amount">1</span>
+       多件
+    </div>
 
-    {#  frame2  #}
+{#    #}{#  frame2  #}
     <div class="screen5 flex-center flex-column full-height">
-{#        <p class="text-h3 text-grey screen5-title">#}
-{#            累计用户#}
-{#            <text class="text-font-bold text-black">400</text>#}
-{#            万#}
-{#        </p>#}
+        <p class="transparent text-h3 text-grey screen5-title" id="user">
+            累计用户
+            <text class="text-font-bold text-black">400</text>
+            万
+        </p>
 
-        {#   卡片  #}
-        <div class="transparent review-item " id="review-card">
-            <div class="review">
+{#           卡片#}
+        <div class=" review-item " >
+            <div class=" transparent review" id="review-card">
                 <img src="../../media/screen2/waterfallsFlow/1.jpg" class="post-img">
                 <div class="review-item">
                     <img src="../../media/screen2/waterfallsFlow/1.jpg" class="avatar">
                     <text class="review-text text-mini text-grey">衣服真的超好看的，喜欢喜欢喜欢或许爱你阿克苏将阿克苏衣服真的超好看的!</text>
                 </div>
             </div>
-            <div class="review">
+            <div class="transparent review" id="review-card1">
                 <img src="../../media/screen2/waterfallsFlow/1.jpg" class="post-img">
                 <div class="review-item">
                     <img src="../../media/screen2/waterfallsFlow/1.jpg" class="avatar">
                     <text class="review-text text-mini text-grey">衣服真的超好看的，喜欢喜欢喜欢!</text>
                 </div>
             </div>
+
         </div>
-        <div class="transparent review-item " id="review-card1">
-            <div class="review">
-                <img src="../../media/screen2/waterfallsFlow/1.jpg" class="post-img">
-                <div class="review-item">
-                    <img src="../../media/screen2/waterfallsFlow/1.jpg" class="avatar">
-                    <text class="review-text text-mini text-grey">衣服真的超好看的，喜欢喜欢喜欢或许爱你阿克苏将阿克苏衣服真的超好看的!</text>
-                </div>
-            </div>
-            <div class="review">
-                <img src="../../media/screen2/waterfallsFlow/1.jpg" class="post-img">
-                <div class="review-item">
-                    <img src="../../media/screen2/waterfallsFlow/1.jpg" class="avatar">
-                    <text class="review-text text-mini text-grey">衣服真的超好看的，喜欢喜欢喜欢!</text>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>

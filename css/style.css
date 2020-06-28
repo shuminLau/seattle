@@ -122,7 +122,6 @@
 }
 .screen3-box{
     position: relative;
-    top: -50vh;
 }
 .screen3-img {
     width: 35vw;
@@ -138,7 +137,9 @@
     left: 5%;
     transform: rotate(7deg);
 }
-
+.screen3-padding{
+    padding-bottom: 1vh;
+}
 /*screen3 frame2*/
 
 
@@ -195,6 +196,7 @@
     width: 2.4vw;
     height: 2.4vw;
     border-radius: 50%;
+    z-index: 1;
     background-color: rgba(234, 212, 39, 0.9);
 }
 
@@ -263,7 +265,7 @@
     margin: 1.5vw 1vw 1vw 0;
     overflow: hidden;
     height: 22vw;
-    width: 35vw;
+    width: 33vw;
 
 }
 
